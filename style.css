@@ -7,10 +7,14 @@
   -o-background-size: cover;
   background-size: cover;
 }
+.container{
+  padding-inline:100px;
+}
 ul {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  margin-left: 190px;
 }
 .zoom {
     padding: 5px;
@@ -27,4 +31,10 @@ ul {
   background-color: transparent;
   text-decoration: underline;
   text-underline-offset: 7px;
+}
+.Slide{
+  z-index: 0;
+}
+.zoom{
+  max-width: 20rem; height: 340px; border-radius: 10px;
 }
