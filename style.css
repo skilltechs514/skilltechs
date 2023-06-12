@@ -27,14 +27,27 @@ ul {
   .zoom:hover {
     transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
-.navbar-collapse ul li :hover{
-  background-color: transparent;
-  text-decoration: underline;
-  text-underline-offset: 7px;
-}
+ #underline{
+    border-bottom: 1px solid #fff;
+    width: 0px;
+    transition: width 2s;
+  }
+  ul li #underline:active{
+    border-bottom: 1px solid #fff;
+    width: 500px;
+  }
+
 .Slide{
   z-index: 0;
 }
 .zoom{
   max-width: 20rem; height: 340px; border-radius: 10px;
 }
+.table td{
+  text-align: center;
+  border: 0;
+  color: #fff;
+  padding-Top: 5% ;  
+  width: 200px;
+}
+
