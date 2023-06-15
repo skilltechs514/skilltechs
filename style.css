@@ -6,6 +6,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  
 }
 .container{
   padding-inline:100px;
@@ -14,7 +15,9 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  margin-left: 190px;
+}
+div#navbarResponsive {
+  justify-content: flex-end;
 }
 .zoom {
     padding: 5px;
