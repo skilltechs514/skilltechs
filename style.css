@@ -8,13 +8,27 @@
   background-size: cover;
   
 }
+.navbar-light .navbar-toggler-icon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1200px-Hamburger_icon_white.svg.png');
+}
+ul.navbar-nav {
+  background-color: #fff !important;
+  text-align: end;
+  width: 350px;
+  padding: 20px;
+  float: right;
+  border-radius: 10px;
+  /* color: #000; */
+}
 .container{
-  padding-inline:100px;
+  padding: auto;
+  padding-inline: 12%;
 }
 ul {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  background-color: #fff !important;
 }
 div#navbarResponsive {
   justify-content: flex-end;
@@ -177,8 +191,70 @@ body{
      cursor: pointer;
   }
  
- 
+  .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    color: #0066CC !important;
+}
+.navbar-toggler{
+  border:2px solid #fff !important
+}
+.position-absolute {
+  position: absolute !important;
+  z-index: 1;
+  left: 12%;
+  top: 35%;
+}
+.text-left{
+  position: absolute !important;
+  z-index: 1;
+  left: 12%;
+  top: 45%;
+  text-align: justify;
+  width: 45%;
+}
   /* media queries */
+  @media (max-width: 991px){
+    .position-absolute {
+      position: absolute !important;
+      z-index: 1;
+      left: 26%;
+      top: 35%;
+      width: 55%;
+      font-size: 30px;
+  }
+  .text-left{
+    position: absolute !important;
+    z-index: 1;
+    left: 26%;
+    top: 45%;
+    text-align: center;
+    width: 55%;
+    margin-top: 20px;
+  }
+  }
+  @media (min-width: 576px){
+  .container, .container-sm {
+      max-width: 100%;
+  }
+}
+  @media (min-width: 768px){
+.container, .container-md, .container-sm {
+    max-width: 100%;
+}
+  }
+  @media (min-width: 992px){
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    background-color: transparent !important;
+ 
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: #fff !important;
+}
+  }
     @media (max-width: 968px){
  
       #fancy-form .form-sections{
