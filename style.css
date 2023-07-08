@@ -203,7 +203,8 @@ body{
   position: absolute !important;
   z-index: 1;
   left: 12%;
-  top: 35%;
+  top: 40%;
+  font-size: 30px;
 }
 .text-left{
   position: absolute !important;
@@ -211,27 +212,15 @@ body{
   left: 12%;
   top: 45%;
   text-align: justify;
-  width: 45%;
+  width: 35%;
+  margin-top: 20px;
 }
+
   /* media queries */
-  @media (max-width: 991px){
-    .position-absolute {
-      position: absolute !important;
-      z-index: 1;
-      left: 26%;
-      top: 35%;
-      width: 55%;
-      font-size: 30px;
-  }
-  .text-left{
-    position: absolute !important;
-    z-index: 1;
-    left: 26%;
-    top: 45%;
-    text-align: center;
-    width: 55%;
-    margin-top: 20px;
-  }
+  @media (max-width:1180px){
+    .text-left{
+      width: 414px;
+    }
   }
   @media (min-width: 576px){
   .container, .container-sm {
