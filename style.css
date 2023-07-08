@@ -217,6 +217,14 @@ body{
 }
 
   /* media queries */
+  @media (max-width: 476px){
+  .text-left {
+    padding: 10px;
+      width: 85% !important;
+      margin-top: 60px !important;
+      text-align: center !important;
+  }
+  }
   @media (max-width:1180px){
     .text-left{
       width: 414px;
