@@ -217,13 +217,34 @@ body{
 }
 
   /* media queries */
+   @media(max-width:540px){
+    .position-absolute{
+      width: 414px;
+    }
+    .text-left{
+      width: 370px !important;
+      text-align: center;
+      left: 17%;
+      margin-top: 60px !important;
+    }
+   }
   @media (max-width: 476px){
   .text-left {
     padding: 10px;
       width: 85% !important;
       margin-top: 60px !important;
       text-align: center !important;
+      margin-top: 65px !important;
+      left: 8%;
   }
+
+  .position-absolute {
+    position: absolute !important;
+    z-index: 1;
+    left: 5%;
+    top: 40%;
+    font-size: 35px;
+}
   }
   @media (max-width:1180px){
     .text-left{
