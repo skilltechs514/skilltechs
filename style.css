@@ -412,6 +412,7 @@ h1.text-center.position-absolute.font-family-text.heading-3 {
     padding: 15px !important;
   }
   p.mt-3.font-family-text{
-    word-spacing: 0.005em !important;
+    text-align:justify !important;
+word-spacing:-2px !important;
   }
 }
