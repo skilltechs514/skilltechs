@@ -14,7 +14,7 @@
 ul.navbar-nav {
   background-color: #fff !important;
   text-align: end;
-  width: 350px;
+  width: 100%;
   padding: 20px;
   float: right;
   border-radius: 10px;
@@ -234,6 +234,9 @@ body{
 }
   }
   @media screen and (max-width:992px) {
+    ul{
+      gap:0
+    }
     p.font-family-text.sub-heading{
       text-align:  center !important;
     }
