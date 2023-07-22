@@ -365,8 +365,15 @@ body{
 .font-family-text{
   font-family: "Sf Pro Display Regular", sans-serif !important;
 }
+section.table-class {
+  width: 100%;
+}
 
 .container-fluid .row {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+td {
+  padding-top: 7px !important;
+  padding-bottom: 5px !important;
 }
