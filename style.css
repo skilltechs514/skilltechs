@@ -230,6 +230,13 @@ body{
     }
    }
   @media (max-width: 476px){
+  .address-box{
+    display: flex !important;
+    flex-direction: column;
+  }
+  .address-detail{
+    text-align: center !important;
+  }  
   .text-left {
     padding: 10px;
     width: 71% !important;
