@@ -234,6 +234,14 @@ body{
 }
   }
    @media(max-width:540px){
+    h1.text-center.position-absolute.font-family-text.heading-2 {
+      margin-left: 0px !important;
+      margin-top: 70px !important;
+    }
+    h1.text-center.position-absolute.font-family-text.heading-3 {
+      margin-left: 0px !important;
+      margin-top: 120px !important;
+    }
     .position-absolute{
       width: 96.4%;
       font-size: 25px !important;
@@ -377,4 +385,20 @@ td {
   padding-top: 7px !important;
   padding-bottom: 5px !important;
   cursor: pointer;
+}
+h1.text-center.position-absolute.font-family-text.heading-1 {
+  font-size: 50px !important;
+  font-weight: bolder;
+}
+h1.text-center.position-absolute.font-family-text.heading-2 {
+  font-size: 50px !important;
+  font-weight: bolder;
+  margin-top: 60px;
+  margin-left: 120px;
+}
+h1.text-center.position-absolute.font-family-text.heading-3 {
+  font-size: 50px !important;
+  font-weight: bolder;
+  margin-top: 120px;
+  margin-left: 220px;
 }
