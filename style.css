@@ -233,6 +233,19 @@ body{
     padding: 0 !important;
 }
   }
+  @media screen and (max-width:992px) {
+    p.font-family-text.sub-heading{
+      text-align:  center !important;
+    }
+  }
+  @media(max-width:378px){
+    p.font-family-text.main-heading {
+      font-size: 15px !important;
+  }
+  p.font-family-text.sub-heading{
+    font-size: 12px !important;
+  }
+  }
    @media(max-width:540px){
     h1.text-center.position-absolute.font-family-text.heading-2 {
       margin-left: 0px !important;
@@ -327,6 +340,9 @@ body{
 }
   }
   @media (min-width: 992px){
+    p.font-family-text.sub-heading{
+      text-align: left !important;
+    }
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
     background-color: transparent !important;
@@ -406,6 +422,9 @@ h1.text-center.position-absolute.font-family-text.heading-3 {
 
 @media (max-width:363px) {
   p.card-text.text-center.font-family-text {
+    font-size: 15px !important;
+  }
+  p.font-family-text{
     font-size: 15px !important;
   }
   .p-5 {
