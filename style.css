@@ -366,7 +366,7 @@ body{
   font-family: "Sf Pro Display Regular", sans-serif !important;
 }
 section.table-class {
-  width: 100%;
+    width: 100%;
 }
 
 .container-fluid .row {
@@ -376,4 +376,5 @@ section.table-class {
 td {
   padding-top: 7px !important;
   padding-bottom: 5px !important;
+  cursor: pointer;
 }
