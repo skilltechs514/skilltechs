@@ -402,9 +402,7 @@ h1.text-center.position-absolute.font-family-text.heading-3 {
   margin-top: 120px;
   margin-left: 220px;
 }
-p.card-text.text-center.font-family-text {
-  max-width: 230px;
-}
+
 
 @media (max-width:363px) {
   p.card-text.text-center.font-family-text {
