@@ -31,18 +31,18 @@ $mail->isSMTP();
 $mail->Host = 'smtp.gmail.com';  // Replace with your SMTP server
 $mail->Port = 587;               // Replace with your SMTP port
 $mail->SMTPAuth = true;
-$mail->Username = 'yousafarslan09@gmail.com';   // Replace with your SMTP username (email address)
-$mail->Password = 'Nathy9176';           // Replace with your SMTP password
+$mail->Username = '';   // Replace with your SMTP username (email address)
+$mail->Password = '';           // Replace with your SMTP password
 
 $mail->SMTPSecure = 'tls';
 $mail->SMTPDebug = PHPMailer\PHPMailer\SMTP::DEBUG_SERVER;
 // Set the email recipients, subject, and message
-$to = "yousafarslan09@gmail.com";
+$to = "";
 $subject = "Test Email";
 $message = "This is a test email.";
 
 // Set the "From" address
-$mail->setFrom('yousafarslan09@gmail.com', 'Arslan Yousaf');  // Replace with the sender's email address and name
+$mail->setFrom('', '');  // Replace with the sender's email address and name
 
 // Add the recipient address
 $mail->addAddress($to);
