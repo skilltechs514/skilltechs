@@ -4,7 +4,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $email = $_POST['email'];
   $number = $_POST['number'];
   $message = $_POST['message'];
-  $headers = "From: info@archlighttech.net\r\n";
+  $headers = "From: info@arclighttech.net\r\n";
   $headers .= "Reply-To: yousafarslan09@gmail.com\r\n";
   $headers .= "Return-Path: yousafarslan09@gmail.com\r\n"; // Make sure to use a valid email address here.
   $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
@@ -12,13 +12,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $to = 'yousafarslan09@gmail.com';
   $subject = 'New email from website';
   $body = "Name: $name\nEmail: $email\n\n$message";
-  ini_set("SMTP", "smtp.gmail.com");
-  ini_set("smtp_port","587");
-  ini_set("info@archlighttech.net", "yousafarslan09@gmail.com");
-ini_set("smtp_ssl", "tls");
+  ini_set("SMTP", "arclighttech.net");
+  ini_set("smtp_port","25");
+  ini_set("info@arclighttech.net", "yousafarslan09@gmail.com");
+  ini_set("smtp_ssl", "tls");
   // Send e$mail
-  if (mail($to, $subject, $body,$headers)) {
-    echo 'E$mail sent successfully.';
+  if (mail($to, $subject, $body, $headers)) {
+    echo 'Email sent successfully.';
   } else {
     echo 'An error occurred. Please try again later.';
   }
