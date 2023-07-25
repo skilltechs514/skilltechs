@@ -6,10 +6,10 @@ require './PHPMailer/src/Exception.php';
 require './PHPMailer/src/PHPMailer.php';
 require './PHPMailer/src/SMTP.php';
 
-    $name =$_POST['name'];
-    $email = $_POST['email'];
-    $subject = $_POST['telephone'];
-    $message = $_POST['message'];
+    $name =$_GET['name'];
+    $email = $_GET['email'];
+    $subject = $_GET['number'];
+    $message = $_GET['message'];
 
     $mail = new PHPMailer(true);
     $mail->isSMTP();
