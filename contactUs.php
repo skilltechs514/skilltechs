@@ -28,22 +28,21 @@ require 'PHPMailer\src\Exception.php';
 require 'PHPMailer\src\SMTP.php';
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 $mail->isSMTP();
-$mail->Host = 'https://agreeable-cliff-0bd37e810.3.azurestaticapps.net/';  // Replace with your SMTP server
-$mail->Port = 25;               // Replace with your SMTP port
-$mail->SMTPAuth = false;
-$mail->SMTPAutoTLS = false; 
-$mail->Username = 'root';   // Replace with your SMTP username (email address)
-$mail->Password = 'root';             // Replace with your SMTP password
+$mail->Host = 'smtp.gmail.com';  // Replace with your SMTP server
+$mail->Port = 587;               // Replace with your SMTP port
+$mail->SMTPAuth = true;
+$mail->Username = 'yousafarslan09@gmail.com';   // Replace with your SMTP username (email address)
+$mail->Password = 'Nathy9176';           // Replace with your SMTP password
 
 $mail->SMTPSecure = 'tls';
-
+$mail->SMTPDebug = PHPMailer\PHPMailer\SMTP::DEBUG_SERVER;
 // Set the email recipients, subject, and message
 $to = "yousafarslan09@gmail.com";
 $subject = "Test Email";
 $message = "This is a test email.";
 
 // Set the "From" address
-$mail->setFrom('archlighttech.net', 'Your Name');  // Replace with the sender's email address and name
+$mail->setFrom('yousafarslan09@gmail.com', 'Arslan Yousaf');  // Replace with the sender's email address and name
 
 // Add the recipient address
 $mail->addAddress($to);
